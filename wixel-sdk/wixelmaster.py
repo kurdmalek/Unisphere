@@ -1,4 +1,4 @@
-import serial
+# from serial import serial
 import time
 from wixel import *
 
