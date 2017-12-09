@@ -1,4 +1,4 @@
-from serial import serial 
+import serial 
 
 # Wixel Master Controller interface
 #
