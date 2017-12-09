@@ -7,17 +7,17 @@ from wixel import *
 
 master = wixelMasterController()
 
-while (true):
+while (True):
 	for i in range(0, 6):
-		master.setServoPosition(0, i, 1000)
-		master.setServoPosition(0, i, 2000)
-		master.setServoPosition(0, i, 0)
+		master.setServoPosition(1, i, 1000)
+		master.setServoPosition(1, i, 2000)
+		master.setServoPosition(1, i, 0)
  
-	master.sendSlaveData(0)
+	master.sendSlaveData(1)
 	time.sleep(4)
-	master.sendSlaveData(0)
+	master.sendSlaveData(1)
 	time.sleep(4)
-	master.sendSlaveData(0)
+	master.sendSlaveData(1)
 	time.sleep(4)
 
 master.closeMaster()
