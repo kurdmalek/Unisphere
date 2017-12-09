@@ -11,7 +11,7 @@ import serial
 class wixelMasterController:
     def __init__(self):
         usbPort = '/dev/ttyACM0'
-        self.sc = serial.Serial(usbPort, timeout=1)
+        self.sc = Serial(usbPort, timeout=1)
         self.initializeTables()
 
     def initializeTables(self):
